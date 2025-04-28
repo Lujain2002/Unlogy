@@ -11,6 +11,16 @@ namespace Unlogy.Data
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+         
+            modelBuilder.Entity<Course>()
+                .Property(c => c.Price)
+                .HasColumnType("decimal(18,2)");  
+        }
+
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
