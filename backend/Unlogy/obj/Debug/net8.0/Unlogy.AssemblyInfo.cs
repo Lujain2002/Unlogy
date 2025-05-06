@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Unlogy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56e63c329b6ea39c4087e60acb222232fb30acc0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cc61e409281fd9b5875a314d84bbf3856a574ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Unlogy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Unlogy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

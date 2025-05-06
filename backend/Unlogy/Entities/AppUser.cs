@@ -3,8 +3,8 @@
 namespace Unlogy.Entities
 {
     public class AppUser : IdentityUser
-    { 
-
+    {
+       
 
     }
 }

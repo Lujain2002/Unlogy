@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jFSZTFOwxM45zcBK0e1Cc/VCr5LtnhvDH0lrNxqIiFKDAFzmRKC6uajDRMPv/p3lZi6l+xDsfItbeJgKrOLrbg==",
+  "dgSpecHash": "4v6NA/hxgh+Pd4jjkT3SRgwwHcd91TFa7MQF6cOTgFTvsl+/JbNRrIw8/aW6xFTtNeij+hO4LDsHBNwZlUklfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Back End\\Unlogy\\Unlogy\\Unlogy.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Backend\\Unlogy\\backend\\Unlogy\\Unlogy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
