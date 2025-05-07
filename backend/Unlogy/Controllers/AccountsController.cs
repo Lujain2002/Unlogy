@@ -27,16 +27,24 @@ namespace Unlogy.Controllers
             this.configuration = configuration;
         }
         [HttpPost("register")]
-       
+
         public async Task<IActionResult> Register(RegisterDTO dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            
             var validRoles = new[] { "Student", "Teacher" };
             if (!validRoles.Contains(dto.Role))
                 return BadRequest(new { error = "Invalid role. Only 'Student' or 'Teacher' are allowed." });
+
+           
+            var existingUserByName = await userManager.FindByNameAsync(dto.UserName);
+            if (existingUserByName != null)
+                return BadRequest(new { error = "Username is already taken." });
+
+            var existingUserByEmail = await userManager.FindByEmailAsync(dto.Email);
+            if (existingUserByEmail != null)
+                return BadRequest(new { error = "Email is already registered." });
 
             var user = new AppUser
             {
@@ -60,6 +68,7 @@ namespace Unlogy.Controllers
 
             return Ok(new { message = "User Registered Successfully", role = dto.Role });
         }
+
 
 
         [HttpPost("login")]
