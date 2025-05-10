@@ -1,9 +1,6 @@
-import Login from "@/components/login";
+// app/page.tsx
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <div style={{ padding: "2rem" }}>
-      <Login />
-    </div>
-  );
+  redirect('/public');
 }
