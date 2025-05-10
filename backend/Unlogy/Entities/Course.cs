@@ -22,5 +22,7 @@
 
 
         public ICollection<Lesson> Lessons { get; set; }
+
+        public float Rating { get; set; } // for top rating courses
     }
 }
