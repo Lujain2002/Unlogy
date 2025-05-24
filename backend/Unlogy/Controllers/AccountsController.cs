@@ -125,6 +125,31 @@ namespace Unlogy.Controllers
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
+        // get all freelancers
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<AppUser>>> GetAllUsers()
+        {
+            return await _context.Users.ToListAsync();
+        }
+
+        // delete freelancer 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+                {
+                return NotFound();
+                }
+
+            _context.Users.Remove(user);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+        }
+
+
+
 
 
     }
